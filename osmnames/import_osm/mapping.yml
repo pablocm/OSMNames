@@ -191,13 +191,13 @@ tables:
     - key: addr:place
       name: place
       type: string
-    type_mappings:
-      points:
-        addr:housenumber:
-        - __any__
-      polygons:
-        addr:housenumber:
-        - __any__
+    #type_mappings:
+    #  points:
+    #    addr:housenumber:
+    #    - __any__
+    #  polygons:
+    #    addr:housenumber:
+    #    - __any__
   relation:
     type: relation
     columns:
