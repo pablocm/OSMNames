@@ -8,7 +8,7 @@ tables:
       type: geometry
     - name: type
       type: mapping_value
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
@@ -71,7 +71,7 @@ tables:
       name: imported_country_code
       type: string
       key: ISO3166-1:alpha2
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
@@ -121,7 +121,7 @@ tables:
       type: geometry
     - name: type
       type: mapping_value
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
