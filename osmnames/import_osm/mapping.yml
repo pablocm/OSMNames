@@ -26,38 +26,38 @@ tables:
     mapping:
       highway:
       - pedestrian
-      - motorway
-      - motorway_link
-      - trunk
-      - trunk_link
-      - primary
-      - primary_link
-      - secondary
-      - secondary_link
-      - tertiary
-      - tertiary_link
-      - unclassified
-      - residential
-      - road
-      - living_street
+      # - motorway
+      # - motorway_link
+      # - trunk
+      # - trunk_link
+      # - primary
+      # - primary_link
+      # - secondary
+      # - secondary_link
+      # - tertiary
+      # - tertiary_link
+      # - unclassified
+      # - residential
+      # - road
+      # - living_street
       - raceway
-      - construction
+      # - construction
       - track
-      - service
+      # - service
       - path
       - cycleway
-      - steps
-      - bridleway
+      # - steps
+      # - bridleway
       - footway
-      - corridor
-      - crossing
+      # - corridor
+      # - crossing
       waterway:
       - river
       - riverbank
       - stream
       - canal
-      - drain
-      - ditch
+      # - drain
+      # - ditch
   polygon:
     type: polygon
     fields:
@@ -106,12 +106,19 @@ tables:
       - water
       - bay
       - desert
+      - beach
+      - glacier
       highway:
       - pedestrian
-      railway:
-      - station
-      aeroway:
-      - aerodrome
+      #railway:
+      #- station
+      #aeroway:
+      #- aerodrome
+      leisure:
+        - horse_riding
+        - marina
+        - nature_reserve
+        - park
   point:
     type: point
     fields:
@@ -168,10 +175,9 @@ tables:
       - peak
       - volcano
       - hill
-      railway:
-      - station
-      aeroway:
-      - aerodrome
+      - hot_spring
+      waterway:
+      - waterfall
   housenumber:
     type: geometry
     fields:
@@ -265,6 +271,8 @@ tables:
       - peak
       - volcano
       - hill
+      - beach
+      - glacier
       landuse:
       - residential
       boundary:
@@ -272,6 +280,9 @@ tables:
       type:
       - associatedStreet
       - street
+      leisure:
+      - nature_reserve
+      - park
 tags:
   load_all: true
 

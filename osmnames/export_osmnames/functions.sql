@@ -6,10 +6,10 @@ BEGIN
                   'unclassified','residential','road','living_street','raceway','construction','track','service','path','cycleway',
                   'steps','bridleway','footway','corridor','crossing','pedestrian') THEN 'highway'
     WHEN type IN ('river','riverbank','stream','canal','drain','ditch') THEN 'waterway'
-    WHEN type IN ('mountain_range','water','bay','desert','peak','volcano','hill') THEN 'natural'
+    WHEN type IN ('mountain_range','water','bay','desert','peak','volcano','hill', 'beach', 'glacier', 'hot_spring', 'waterfall', 'nature_reserve') THEN 'natural'
     WHEN type IN ('administrative', 'postal_code') THEN 'boundary'
     WHEN type IN ('city','borough','suburb','quarter','neighbourhood','town','village','hamlet',
-                  'island','ocean','sea','continent','country','state', 'station', 'aerodrome') THEN 'place'
+                  'island','ocean','sea','continent','country','state', 'horse_riding', 'marina', 'park') THEN 'place'
     WHEN type IN ('residential','reservoir') THEN 'landuse'
     ELSE 'multiple'
   END;
