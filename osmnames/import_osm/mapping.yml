@@ -25,7 +25,7 @@ tables:
       type: integer
     mapping:
       highway:
-      - pedestrian
+      # - pedestrian
       # - motorway
       # - motorway_link
       # - trunk
@@ -109,7 +109,7 @@ tables:
       - beach
       - glacier
       highway:
-      - pedestrian
+      #- pedestrian
       #railway:
       #- station
       #aeroway:
