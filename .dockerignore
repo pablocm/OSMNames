@@ -1,5 +1,4 @@
 ./data/import/
 ./data/export/
 ./data/cache/
-./docker_tmp
-./docker_pgdata
+./docker/
