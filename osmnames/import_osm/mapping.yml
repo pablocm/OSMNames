@@ -42,7 +42,7 @@ tables:
       # - living_street
       - raceway
       # - construction
-      - track
+      # - track
       # - service
       - path
       - cycleway

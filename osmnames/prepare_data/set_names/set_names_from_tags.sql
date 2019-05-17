@@ -14,8 +14,8 @@ BEGIN
   name := current_name;
   IF name = '' IS NOT FALSE THEN
     SELECT COALESCE(
-                  all_tags -> 'name:en',
                   all_tags -> 'name',
+                  all_tags -> 'name:en',
                   all_tags -> 'name:fr',
                   all_tags -> 'name:de',
                   all_tags -> 'name:es',
