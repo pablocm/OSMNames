@@ -8,7 +8,7 @@ tables:
       type: geometry
     - name: type
       type: mapping_value
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
@@ -25,39 +25,39 @@ tables:
       type: integer
     mapping:
       highway:
-      - pedestrian
-      - motorway
-      - motorway_link
-      - trunk
-      - trunk_link
-      - primary
-      - primary_link
-      - secondary
-      - secondary_link
-      - tertiary
-      - tertiary_link
-      - unclassified
-      - residential
-      - road
-      - living_street
+      # - pedestrian
+      # - motorway
+      # - motorway_link
+      # - trunk
+      # - trunk_link
+      # - primary
+      # - primary_link
+      # - secondary
+      # - secondary_link
+      # - tertiary
+      # - tertiary_link
+      # - unclassified
+      # - residential
+      # - road
+      # - living_street
       - raceway
-      - construction
-      - track
-      - service
+      # - construction
+      # - track
+      # - service
       - path
       - cycleway
-      - steps
-      - bridleway
+      # - steps
+      # - bridleway
       - footway
-      - corridor
-      - crossing
+      # - corridor
+      # - crossing
       waterway:
       - river
       - riverbank
       - stream
       - canal
-      - drain
-      - ditch
+      # - drain
+      # - ditch
   polygon:
     type: polygon
     fields:
@@ -71,7 +71,7 @@ tables:
       name: imported_country_code
       type: string
       key: ISO3166-1:alpha2
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
@@ -106,12 +106,19 @@ tables:
       - water
       - bay
       - desert
+      - beach
+      - glacier
       highway:
-      - pedestrian
-      railway:
-      - station
-      aeroway:
-      - aerodrome
+      #- pedestrian
+      #railway:
+      #- station
+      #aeroway:
+      #- aerodrome
+      leisure:
+        - horse_riding
+        - marina
+        - nature_reserve
+        - park
   point:
     type: point
     fields:
@@ -121,7 +128,7 @@ tables:
       type: geometry
     - name: type
       type: mapping_value
-    - key: name:en
+    - key: name:es
       name: name
       type: string
     - key: null
@@ -168,10 +175,9 @@ tables:
       - peak
       - volcano
       - hill
-      railway:
-      - station
-      aeroway:
-      - aerodrome
+      - hot_spring
+      waterway:
+      - waterfall
   housenumber:
     type: geometry
     fields:
@@ -191,13 +197,13 @@ tables:
     - key: addr:place
       name: place
       type: string
-    type_mappings:
-      points:
-        addr:housenumber:
-        - __any__
-      polygons:
-        addr:housenumber:
-        - __any__
+    #type_mappings:
+    #  points:
+    #    addr:housenumber:
+    #    - __any__
+    #  polygons:
+    #    addr:housenumber:
+    #    - __any__
   relation:
     type: relation
     columns:
@@ -265,6 +271,8 @@ tables:
       - peak
       - volcano
       - hill
+      - beach
+      - glacier
       landuse:
       - residential
       boundary:
@@ -272,6 +280,9 @@ tables:
       type:
       - associatedStreet
       - street
+      leisure:
+      - nature_reserve
+      - park
 tags:
   load_all: true
 
