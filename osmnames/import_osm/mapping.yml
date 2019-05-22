@@ -108,7 +108,7 @@ tables:
       - desert
       - beach
       - glacier
-      highway:
+      #highway:
       #- pedestrian
       #railway:
       #- station
@@ -149,7 +149,7 @@ tables:
       - locality
       - village
       - hamlet
-      - isolated_dwelling
+      # - isolated_dwelling
       - island
       - neighbourhood
       - islet
@@ -245,7 +245,7 @@ tables:
       - locality
       - village
       - hamlet
-      - isolated_dwelling
+      # - isolated_dwelling
       - island
       - neighbourhood
       - islet
